@@ -1,12 +1,12 @@
 /* Colors */
 
-h2 {
-    color: White;
-}
-
 body {
     background: #141414;
     color: #a97;
+}
+
+h2 {
+    color: White;
 }
 
 b {
@@ -28,7 +28,6 @@ body {
     font-size: 90%;
 }
 
-
 b {
     font-weight: normal;
 }
@@ -42,7 +41,6 @@ p {
 h2 {
     font-size: 130%;
     margin: 2em 0 0.5em;
-
 }
 
 a img {
@@ -85,5 +83,4 @@ h1 small {
 #langLink a:hover {
     text-decoration: underline;
 }
-
 
