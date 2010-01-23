@@ -21,7 +21,8 @@ def hp(suite):
 def hp_cs(suite):
     t = {
         "lang": "cs",
-        "analytics": suite.web.production,
+        "analytics": (suite.web.production and
+                      suite.request.cookies.get("analytics") != "no"),
         "analyticsCode": suite.web.analyticsCode,
     }
     return TemplateResponse("hp.html", t)
@@ -30,10 +31,17 @@ def hp_cs(suite):
 def hp_en(suite):
     t = {
         "lang": "en",
-        "analytics": suite.web.production,
+        "analytics": (suite.web.production and
+                      suite.request.cookies.get("analytics") != "no"),
         "analyticsCode": suite.web.analyticsCode,
     }
     return TemplateResponse("hp.html", t)
+
+
+def no_analytics(suite):
+    response = werkzeug.Response("OK")
+    response.set_cookie("analytics", value="no", max_age=86400 * 365)
+    return response
 
 
 def get_url_map():
@@ -42,6 +50,7 @@ def get_url_map():
         Rule("/", endpoint=hp),
         Rule("/cs/", endpoint=hp_cs),
         Rule("/en/", endpoint=hp_en),
+        Rule("/no-analytics", endpoint=no_analytics),
     ])
 
 
