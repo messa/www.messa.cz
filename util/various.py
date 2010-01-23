@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 
+"""
+Různé pomocné funkce.
+"""
+
 import genshi
 
 
 def parse_configuration_file(path):
+    """
+    Načtení konfigurace (zpracování souboru s konfigurací).
+    """
     configuration = dict()
     f = open(path)
     for lineNo, line in enumerate(f):

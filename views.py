@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+"""
+Funkce zpracovávající a generující jednotlivé stránky webu.
+"""
+
 import werkzeug
 
 from util.response import TemplateResponse
@@ -19,6 +23,9 @@ def hp(suite):
 
 
 def hp_cs(suite):
+    """
+    Titulní stránka - česká verze.
+    """
     t = {
         "lang": "cs",
         "analytics": (suite.web.production and
@@ -29,6 +36,9 @@ def hp_cs(suite):
 
 
 def hp_en(suite):
+    """
+    Titulní stránka - anglická verze.
+    """
     t = {
         "lang": "en",
         "analytics": (suite.web.production and
@@ -39,12 +49,19 @@ def hp_en(suite):
 
 
 def no_analytics(suite):
+    """
+    Stránka, která nastaví cookie, aby se uživateli nezobrazoval kód pro
+    měření návštěvnosti. Určeno především pro samotného autora webu.
+    """
     response = werkzeug.Response("OK")
     response.set_cookie("analytics", value="no", max_age=86400 * 365)
     return response
 
 
 def get_url_map():
+    """
+    URL routing.
+    """
     from werkzeug.routing import Map, Rule
     return Map([
         Rule("/", endpoint=hp),
