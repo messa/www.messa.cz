@@ -1,0 +1,100 @@
+<html
+    xmlns:py="http://genshi.edgewall.org/"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="${lang}" lang="${lang}">
+    <head>
+        <title>Petr Messner (messa.cz)</title>
+        <link rel="stylesheet" href="${static_url('style.css')}" type="text/css" />
+        <py:if test="lang == 'cs'">
+            <meta name="description" content="Osobní stránky Petra Messnera." />
+            <meta name="author" content="Petr Messner" />
+            <meta name="Content-Language" content="cs" />
+            <meta name="keywords" content="Petr Messner,osobní stránky,Messa,messa.cz" />
+        </py:if>
+        <py:if test="lang == 'en'">
+            <meta name="description" content="Petr Messner personal site." />
+            <meta name="author" content="Petr Messner" />
+            <meta name="Content-Language" content="en" />
+            <meta name="keywords" content="Petr Messner,personal site,Messa,messa.cz" />
+        </py:if>
+    </head>
+    <body>
+
+        <div id="everything">
+
+            <p id="langLink">
+                <a py:if="lang == 'cs'" href="/en/">(English version)</a>
+                <a py:if="lang == 'en'" href="/cs/">(česky)</a>
+            </p>
+
+            <h1>Petr Messner <!-- <small>&ndash; osobní web</small> --> </h1>
+
+            <p py:if="lang == 'cs'">
+                <b>Vítejte.</b>
+                Jmenuji se Petr Messner a zabývám se především tvorbou
+                webových aplikací.
+                Pracuji jako programátor pro
+                <a href="http://vyvojari.seznam.cz/">Seznam.cz</a>
+                a studuji
+                <a href="http://informatika.fel.cvut.cz/">Otevřenou informatiku</a>
+                na <a href="http://www.fel.cvut.cz/">FEL ČVUT</a>.
+            </p>
+
+            <p py:if="lang == 'en'">
+                <b>Welcome.</b>
+                My name is Petr Messner and I am a web application developer.
+                I work for <a href="http://vyvojari.seznam.cz/">Seznam.cz</a>
+                (most visited Czech portal and search engine) and study
+                <a href="http://informatika.fel.cvut.cz/">Open Informatics</a>
+                at <a
+                    title="Faculty of Electrical Engineering, Czech Technical University"
+                    href="http://www.fel.cvut.cz/">FEE CTU</a>.
+            </p>
+
+            <h2 py:if="lang == 'cs'">Kontakt</h2>
+            <h2 py:if="lang == 'en'">Contact</h2>
+
+            <p>
+                <b>E-mail: ${obfuscate('petr.messner@gmail.com')}</b><br />
+                Jabber: ${obfuscate('messa@jabber.cz')}<br />
+                ICQ: 164-128-538
+            </p>
+
+            <br />
+
+            <p>
+                <a href="http://www.twitter.com/messa_cz">
+                    <img
+                        src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png"
+                        alt="Follow messa_cz on Twitter" />
+                </a>
+            </p>
+
+            <p>
+                <a href="http://cz.linkedin.com/in/messa">
+                    <img
+                        src="http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.gif"
+                        width="80" height="15"
+                        alt="View Petr Messner's profile on LinkedIn" />
+                </a>
+            </p>
+
+            <p>
+                <a href="http://www.slogy.cz/">Slogy.cz</a>
+            </p>
+
+        </div>
+
+        <script py:if="analytics" type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script py:if="analytics" type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("${analyticsCode}");
+                pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+
+    </body>
+</html>

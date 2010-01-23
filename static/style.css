@@ -1,0 +1,89 @@
+/* Colors */
+
+h2 {
+    color: White;
+}
+
+body {
+    background: #141414;
+    color: #a97;
+}
+
+b {
+    color: #dc9;
+}
+
+a {
+    color: #986;
+}
+
+#langLink a {
+    color: #666;
+}
+
+/* Basic elements */
+
+body {
+    font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+    font-size: 90%;
+}
+
+
+b {
+    font-weight: normal;
+}
+
+p {
+    max-width: 44em;
+    line-height: 160%;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 130%;
+    margin: 2em 0 0.5em;
+
+}
+
+a img {
+    border: none;
+}
+
+/* Site logo */
+
+h1 {
+    color: White;
+    font-size: 230%;
+    margin: 2em 0 1em 0;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+h1 small {
+    font-size: 60%;
+    amargin-left: 0.9ex;
+}
+
+/* Page layout */
+
+#everything {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#langLink {
+    text-align: right;
+    max-width: inherit;
+    font-size: 90%;
+}
+
+/* Other language link */
+
+#langLink a {
+    text-decoration: none;
+}
+#langLink a:hover {
+    text-decoration: underline;
+}
+
+
