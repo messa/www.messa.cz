@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Petr Messner - software developer, startup co-founder">
+    <meta name="author" content="Petr Messner">
+    <link rel="icon" href="http://media.moddb.com/cache/images/downloads/1/64/63046/thumb_620x2000/EDGE.gif">
+    <title>Petr Messner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,600" rel="stylesheet">
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel:300,400,500,700&amp;subset=latin-ex" rel="stylesheet">
+    -->
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div>
+          <div style='float: right'>
+            {% if en %}
+              <b>english</b> &middot; <a href='/cs/'>česky</a>
+            {% elif cs %}
+              <a href='/en/'>english</a> &middot; <b>česky</b>
+            {% endif %}
+          </div>
+          <div class="headline">
+            <h1>Petr Messner</h1>
+            <p class="lead">
+              {% if en %}
+                Software developer, startup cofounder
+              {% elif cs %}
+                Softwarový vývojář, startupista
+              {% endif %}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 bigcol-left">
+              <section id="the-startups">
+                {% if en %}
+                  <p>The startups are:</p>
+                {% elif cs %}
+                  <p>Startupy:</p>
+                {% endif %}
+
+                <ul class="big">
+                  <li>
+                    <p>
+                      <strong class="up"><a href="https://www.leadhub.co/about">Leadhub</a></strong> &ndash;
+                      {% if en %}
+                        marketing integration &amp; automation for e-commerce
+                      {% elif cs %}
+                        integrace a automatizace marketingu pro e-shopy
+                      {% endif %}
+                    </p>
+
+                    <p>
+                      {% if en %}
+                        Analytics, ads and
+                        e-mail newsletters all interconnected in a&nbsp;single tool.
+                      {% elif cs %}
+                        Webová analytika, reklamy a e-mailing propojené dohromady do jednoho nástroje.
+                      {% endif %}
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong class="up"><a href="https://www.tabfoundry.com">Tabfoundry</a></strong> &ndash;
+                      {% if en %}
+                        Facebook tab designer
+                      {% elif cs %}
+                        nástroj pro tvorbu Facebookových tabů
+                      {% endif %}
+                    </p>
+
+                    <p>
+                      {% if en %}
+                        Create your own tab
+                        on your Facebook page. It can be quiz, game, photo contest
+                        or any custom content&mdash;opening hours, restaurant menu&hellip;
+                        No coding required, just WYSIWYG drag-and-drop.
+                      {% elif cs %}
+                        Pomocí Tabfoundry si můžete na své Facebookové stránce vytvořit vlastní tab.
+                        Může na něm být kvíz, hra, fotosoutěž nebo libovolný vlastní obsah,
+                        např. vaše otevírací hodiny nebo denní nabídka.
+                        Není potřeba umět programovat, vše je drag-and-drop.
+                      {% endif %}
+                    </p>
+                  </li>
+                </ul>
+              </section>
+              <section id="info">
+
+                <div class="xpar">
+                  {% if en %}
+                    <p>
+                      <b>Before:</b>
+                      <a href="https://www.sklik.cz/en/">Sklik.cz</a>
+                      (PPC ad platform) and
+                      <a href="https://onas.seznam.cz/en/">Seznam.cz</a> developer &middot;
+                      <a href="https://oi.fel.cvut.cz/en/">Open&nbsp;Informatics</a>
+                    </p>
+                  {% elif cs %}
+                    <p>
+                      <b>Předtím:</b>
+                      Programátor
+                      <a href="https://www.sklik.cz/">Sklik.cz</a> a
+                      <a href="https://onas.seznam.cz/">Seznam.cz</a> &middot;
+                      <a href="https://oi.fel.cvut.cz/">Otevřená&nbsp;informatika</a>
+                    </p>
+                  {% endif %}
+
+                  {% if en %}
+                    <p>
+                      <b>Stuff I work with:</b>
+                      Python &middot;
+                      C++ &middot;
+                      MongoDB &middot;
+                      Debian &middot;
+                      ZeroMQ &middot;
+                      devops &middot;
+                      React &middot;
+                      microservices
+                    </p>
+                  {% elif cs %}
+                    <p>
+                      <b>S čím pracuji:</b>
+                      Python &middot;
+                      C++ &middot;
+                      MongoDB &middot;
+                      Debian &middot;
+                      ZeroMQ &middot;
+                      devops &middot;
+                      React &middot;
+                      microservices
+                    </p>
+                  {% endif %}
+
+                  {% if en %}
+                    <p>
+                      <b>Location:</b>
+                      <a href='https://www.youtube.com/playlist?list=PLM9_KZNJw8qGuEHJf4lcfIiGwpiRtcKAm'>Prague, Czech Republic (EU)</a>
+                    </p>
+                  {% elif cs %}
+                    <p>
+                      <b>Kde:</b> Praha
+                    </p>
+                  {% endif %}
+
+                  {% if en %}
+                    <p>
+                      <b>Twitter:</b>
+                      <strong><a href='https://twitter.com/messa_en'>@messa_en</a></strong> &ndash; English &middot;
+                      <strong><a href='https://twitter.com/messa_cz'>@messa_cz</a></strong> &ndash; Czech
+                    </p>
+                  {% elif cs %}
+                  <p>
+                    <b>Twitter:</b>
+                    <strong><a href='https://twitter.com/messa_cz'>@messa_cz</a></strong> &ndash; česky &middot;
+                    <strong><a href='https://twitter.com/messa_en'>@messa_en</a></strong> &ndash; anglicky
+                  </p>
+                  {% endif %}
+
+                  {% if en %}
+                    <p>
+                      <b>Code:</b>
+                      <a href="https://github.com/messa">Github</a> &middot;
+                      <a href="http://stackoverflow.com/users/196206/messa">SO</a>
+                    </p>
+                  {% elif cs %}
+                  <p>
+                    <b>Kód:</b>
+                    <a href="https://github.com/messa">Github</a> &middot;
+                    <a href="http://stackoverflow.com/users/196206/messa">SO</a>
+                  </p>
+                  {% endif %}
+
+                  {% if en or cs %}
+                    <p>
+                      <b>E-mail:</b>
+                      <a href="mailto:petr.messner@gmail.com">petr.messner@gmail.com</a>
+                    </p>
+                  {% endif %}
+
+                  {% if en %}
+                    <p>
+                      <b>LinkedIn:</b>
+                      <a href="https://linkedin.com/in/messa">my profile</a>
+                    </p>
+                  {% elif cs %}
+                  <p>
+                    <b>LinkedIn:</b>
+                    <a href="https://linkedin.com/in/messa">můj profil</a>
+                  </p>
+                  {% endif %}
+
+                </div>
+
+                {% if en %}
+                  <p>Some useful links:</p>
+                  <ul>
+                    <li>
+                      <a href='https://pyvo.cz/en/praha-pyvo/'>local Python meetup</a>
+                    </li>
+                  </ul>
+                {% elif cs %}
+                  <p>Užitečné odkazy:</p>
+                  <ul>
+                    <li>
+                      <a href='https://pyvo.cz/praha-pyvo/'>Pražský Python meetup</a>
+                    </li>
+                  </ul>
+                {% endif %}
+              </section>
+            </div>
+            <div class="col-md-6 bigcol-right">
+              <section id="projects">
+                <h2>
+                  {% if en %}
+                    Projects
+                  {% elif cs %}
+                    Projekty
+                  {% endif %}
+                </h2>
+                {% if en %}
+                  <p>Nothing groundbreaking yet, but at least something slightly useful:</p>
+                {% elif cs %}
+                  <p>
+                    Zatím nic převratného, ale aspoň něco:
+                  </p>
+                {% endif %}
+
+                <ul>
+                  <li>
+                    <a href="https://github.com/messa/tips">tips</a>
+                    &ndash;
+                    {% if en %}
+                      Github repo with some notes
+                    {% elif cs %}
+                      Github repozitář s různými poznámkami
+                    {% endif %}
+                  </li>
+                  <li>
+                    <a href="https://github.com/messa/tools">tools</a>
+                    &ndash;
+                    {% if en %}
+                      some CLI scripts I use
+                    {% elif cs %}
+                      konzolové skripty
+                    {% endif %}
+                  </li>
+                  <li>
+                    <a href="https://github.com/messa/dotfiles">dotfiles</a>
+                    &ndash;
+                    {% if en %}
+                      configuration files
+                    {% elif cs %}
+                      konfigurační soubory
+                    {% endif %}
+                  </li>
+                </ul>
+              </section>
+              <section id="blog">
+                <h2>Blog</h2>
+                <p>TBA :)</p>
+              </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    {#
+        TODO:
+            - cs verze
+            - nějaká patička/zakončení
+            - GPG klic, kontaktni formular
+            - ikonky k odkazum (github, so atd.)
+            - u blogu vyzkouset posilani mailem
+    #}
+  </body>
+</html>
