@@ -27,6 +27,7 @@ def index_cs():
 
 def main():
     app.run(debug=True, use_reloader=True, host='0.0.0.0')
+    # but it might be better to use "flask run"
 
 
 if __name__ == '__main__':
