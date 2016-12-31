@@ -2,6 +2,7 @@
 
 import flask
 from flask import render_template, request
+from pathlib import Path
 
 
 app = flask.Flask(__name__)
@@ -23,6 +24,13 @@ def index_en():
 @app.route('/cs/')
 def index_cs():
     return render_template('index.html', cs=True)
+
+
+@app.route('/<string:filename>')
+def favicon(filename):
+    return flask.send_from_directory(
+        str(Path(app.root_path) / 'static/favicon'),
+        filename)
 
 
 def main():
