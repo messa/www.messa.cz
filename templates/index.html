@@ -185,12 +185,18 @@
                       SO</a>
                   </p>
 
-                  {% if en or cs %}
-                    <p>
-                      <b>E-mail:</b>
-                      <a href="mailto:petr.messner@gmail.com">petr.messner@gmail.com</a>
-                    </p>
-                  {% endif %}
+                  <p>
+                    <b>E-mail:</b>
+                    <a href="mailto:petr.messner@gmail.com">petr.messner@gmail.com</a>
+                    &middot;
+                    <a href="/static/gpg-key.asc">
+                      {% if en %}
+                        GPG&nbsp;key
+                      {% elif cs %}
+                        GPG&nbsp;klíč
+                      {% endif %}
+                    </a>
+                  </p>
 
                   <p>
                     <b>LinkedIn:</b>
@@ -286,7 +292,6 @@
     {#
         TODO:
             - nějaká patička/zakončení
-            - GPG klic, kontaktni formular
             - u blogu vyzkouset posilani mailem
     #}
     {% if g.ga_id %}
