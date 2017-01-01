@@ -2,10 +2,19 @@
 
 import flask
 from flask import render_template, request
+import os
 from pathlib import Path
 
 
+ga_id = os.environ.get('WWW_MESSA_CZ_GA_ID')
+
+
 app = flask.Flask(__name__)
+
+
+@app.before_request
+def before():
+    flask.g.ga_id = ga_id
 
 
 @app.route('/')
