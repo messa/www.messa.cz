@@ -13,11 +13,14 @@ h1 {
     text-transform: uppercase;
 }
 a:hover {
-    color: White !important;
+    /* color: White !important; */
+    color: #c00 !important;
+    /*
     background-color: #b82000;
     padding: 0px 3px;
     margin-left: -3px;
     margin-right: -3px;
+    */
     text-decoration: none;
 }
 h2 {
@@ -90,4 +93,7 @@ ul.big li {
 }
 .bigcol-right section:first-child h2 {
     margin-top: 0;
+}
+span.icon-and-text {
+    white-space: nowrap;
 }

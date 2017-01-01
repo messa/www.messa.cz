@@ -104,7 +104,9 @@
                       <b>Before:</b>
                       <a href="https://www.sklik.cz/en/">Sklik.cz</a>
                       (PPC ad platform) and
-                      <a href="https://onas.seznam.cz/en/">Seznam.cz</a> developer &middot;
+                      <a href="https://onas.seznam.cz/en/">
+                        <img src="/static/icons/seznam.png" alt="" style="height: 1rem;">
+                        Seznam.cz</a> developer &middot;
                       <a href="https://oi.fel.cvut.cz/en/">Open&nbsp;Informatics</a>
                     </p>
                   {% elif cs %}
@@ -112,36 +114,29 @@
                       <b>Předtím:</b>
                       Programátor
                       <a href="https://www.sklik.cz/">Sklik.cz</a> a
-                      <a href="https://onas.seznam.cz/">Seznam.cz</a> &middot;
+                      <a href="https://onas.seznam.cz/">
+                        <img src="/static/icons/seznam.png" alt="" style="height: 1rem;">
+                        Seznam.cz</a> &middot;
                       <a href="https://oi.fel.cvut.cz/">Otevřená&nbsp;informatika</a>
                     </p>
                   {% endif %}
 
-                  {% if en %}
-                    <p>
+                  <p>
+                    {% if en %}
                       <b>Stuff I work with:</b>
-                      Python &middot;
-                      C++ &middot;
-                      MongoDB &middot;
-                      Debian &middot;
-                      ZeroMQ &middot;
-                      devops &middot;
-                      React &middot;
-                      microservices
-                    </p>
-                  {% elif cs %}
-                    <p>
+                    {% elif cs %}
                       <b>S čím pracuji:</b>
-                      Python &middot;
-                      C++ &middot;
-                      MongoDB &middot;
-                      Debian &middot;
-                      ZeroMQ &middot;
-                      devops &middot;
-                      React &middot;
-                      microservices
-                    </p>
-                  {% endif %}
+                    {% endif %}
+                    <span class="icon-and-text"><img src="/static/icons/python.png" alt="" style="height: 1rem;">&nbsp;Python</span> &middot;
+                    C++ &middot;
+                    <span class="icon-and-text"><img src="/static/icons/mongodb.png" alt="" style="height: 1rem;">&nbsp;MongoDB</span> &middot;
+                    <span class="icon-and-text"><img src="/static/icons/debian.png" alt="" style="height: 1rem;">&nbsp;Debian</span> &middot;
+                    <span class="icon-and-text"><img src="/static/icons/zeromq.png" alt="" style="height: 0.9rem;">&nbsp;ZeroMQ</span> &middot;
+                    devops &middot;
+                    <span class="icon-and-text"><img src="/static/icons/react.png" alt="" style="height: 1rem;">&nbsp;React</span> &middot;
+                    microservices &middot;
+                    <img src="/static/icons/aws.png" alt="" style="height: 0.9rem;">AWS
+                  </p>
 
                   {% if en %}
                     <p>
@@ -157,30 +152,38 @@
                   {% if en %}
                     <p>
                       <b>Twitter:</b>
-                      <strong><a href='https://twitter.com/messa_en'>@messa_en</a></strong> &ndash; English &middot;
-                      <strong><a href='https://twitter.com/messa_cz'>@messa_cz</a></strong> &ndash; Czech
+                      <strong><a href='https://twitter.com/messa_en'>
+                        <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
+                        messa_en</a></strong> &ndash; English &middot;
+                      <strong><a href='https://twitter.com/messa_cz'>
+                        <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
+                        messa_cz</a></strong> &ndash; Czech
                     </p>
                   {% elif cs %}
                   <p>
                     <b>Twitter:</b>
-                    <strong><a href='https://twitter.com/messa_cz'>@messa_cz</a></strong> &ndash; česky &middot;
-                    <strong><a href='https://twitter.com/messa_en'>@messa_en</a></strong> &ndash; anglicky
+                    <strong><a href='https://twitter.com/messa_cz'>
+                      <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
+                      messa_cz</a></strong> &ndash; česky &middot;
+                    <strong><a href='https://twitter.com/messa_en'>
+                      <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
+                      messa_en</a></strong> &ndash; anglicky
                   </p>
                   {% endif %}
 
-                  {% if en %}
-                    <p>
-                      <b>Code:</b>
-                      <a href="https://github.com/messa">Github</a> &middot;
-                      <a href="http://stackoverflow.com/users/196206/messa">SO</a>
-                    </p>
-                  {% elif cs %}
                   <p>
-                    <b>Kód:</b>
-                    <a href="https://github.com/messa">Github</a> &middot;
-                    <a href="http://stackoverflow.com/users/196206/messa">SO</a>
+                    {% if en %}
+                      <b>Code:</b>
+                    {% elif cs %}
+                      <b>Kód:</b>
+                    {% endif %}
+                    <a href="https://github.com/messa">
+                      <img src="/static/icons/github-octocat.jpg" alt="" style="height: 1rem;">
+                      Github</a> &middot;
+                    <a href="http://stackoverflow.com/users/196206/messa">
+                      <img src="/static/icons/stackoverflow.png" alt="" style="height: 1rem;">
+                      SO</a>
                   </p>
-                  {% endif %}
 
                   {% if en or cs %}
                     <p>
@@ -189,17 +192,18 @@
                     </p>
                   {% endif %}
 
-                  {% if en %}
-                    <p>
-                      <b>LinkedIn:</b>
-                      <a href="https://linkedin.com/in/messa">my profile</a>
-                    </p>
-                  {% elif cs %}
                   <p>
                     <b>LinkedIn:</b>
-                    <a href="https://linkedin.com/in/messa">můj profil</a>
+                    {% if en %}
+                      <a href="https://linkedin.com/in/messa">
+                        <img src="/static/icons/linkedin.png" alt="" style="height: 1rem;">
+                        my profile</a>
+                    {% elif cs %}
+                      <a href="https://linkedin.com/in/messa">
+                        <img src="/static/icons/linkedin.png" alt="" style="height: 1rem;">
+                        můj profil</a>
+                    {% endif %}
                   </p>
-                  {% endif %}
 
                 </div>
 
