@@ -79,6 +79,7 @@ li p {
     padding-right: .2ex;
 }
 ul {
+    /* The bullet point images are so small it should be better to inline them (in base64) here... */
     xlist-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQY02NgYGD4D8VEgcGsmImBTECU1XRWBAAM/RHxU8O3lgAAAABJRU5ErkJggg==);
     xlist-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAF0lEQVQY02NgoBX4D8WDUTETTT1FHUUAZf0N9VZ/ZgAAAAAASUVORK5CYII=);
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQY02NgIBH8h+LBqJiJgUxAlNXUU0QUAACiLw313RZ+RwAAAABJRU5ErkJggg==);
@@ -95,5 +96,6 @@ ul.big li {
     margin-top: 0;
 }
 span.icon-and-text {
+    /* I don't want newline between logo and the text */
     white-space: nowrap;
 }
