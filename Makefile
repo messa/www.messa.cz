@@ -2,7 +2,8 @@ pyvenv=pyvenv-3.4
 venv_dir=venv
 
 flask-run: venv
-	PYTHONPATH=. FLASK_APP=messa_web FLASK_DEBUG=1 \
+	PYTHONPATH=. PYTHONDONTWRITEBYTECODE=1 \
+	FLASK_APP=messa_web FLASK_DEBUG=1 \
 		$(venv_dir)/bin/flask run
 
 venv: $(venv_dir)/requirements-installed
