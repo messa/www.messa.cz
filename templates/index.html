@@ -241,11 +241,31 @@
                     Projekty
                   {% endif %}
                 </h2>
+
                 {% if en %}
-                  <p>Nothing groundbreaking yet, but at least something slightly useful:</p>
+                  <p>Open-source projects:</p>
+                {% elif cs %}
+                  <p>Open-source projekty:</p>
+                {% endif %}
+
+                <ul>
+                  <li>
+                    <a href="https://github.com/messa/pyfw">pyfw</a>
+                    &ndash;
+                    {% if en %}
+                      Python iptables firewall
+                    {% elif cs %}
+                      Python iptables firewall
+                    {% endif %}
+                  </li>
+                </ul>
+
+
+                {% if en %}
+                  <p>Personal things:</p>
                 {% elif cs %}
                   <p>
-                    Zatím nic převratného, ale aspoň něco:
+                    Osobní věci:
                   </p>
                 {% endif %}
 
