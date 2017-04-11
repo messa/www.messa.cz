@@ -14,7 +14,7 @@ h1 {
 }
 a:hover {
     /* color: White !important; */
-    color: #c00 !important;
+    color: #d00 !important;
     /*
     background-color: #b82000;
     padding: 0px 3px;
@@ -29,6 +29,10 @@ h2 {
     color: #991800;
     margin-top: 1.5rem;
     font-size: 120%;
+}
+.startup-name {
+    font-size: 130%;
+    line-height: 1.25;
 }
 strong, b {
     font-weight: 400;
@@ -50,12 +54,8 @@ strong, b {
 .headline .lead {
     font-size: 123%;
 }
-a {
-    xcolor: #801000;
-    color: #035;
-}
-strong a, a strong {
-    color: #035;
+a, strong a, a strong {
+    color: #049;
 }
 p {
     margin-top: 1rem;

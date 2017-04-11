@@ -57,15 +57,22 @@
 
                 <ul class="big">
                   <li>
-                    <p>
+                    <div class="startup-name">
+                      <strong class="up">
+                        {% if en %}
+                          <a href="https://www.leadhub.co/en">Leadhub</a>
+                        {% elif cs %}
+                          <a href="https://www.leadhub.co/cs">Leadhub</a>
+                        {% endif %}
+                      </strong>
+                    </div>
+                    <b>
                       {% if en %}
-                        <strong class="up"><a href="https://www.leadhub.co/en">Leadhub</a></strong> &ndash;
                         marketing integration &amp; automation for e-commerce
                       {% elif cs %}
-                        <strong class="up"><a href="https://www.leadhub.co/cs">Leadhub</a></strong> &ndash;
                         integrace a automatizace marketingu pro e-shopy
                       {% endif %}
-                    </p>
+                    </b>
 
                     <p>
                       {% if en %}
@@ -75,23 +82,36 @@
                         Webová analytika, reklamy a e-mailing propojené dohromady do jednoho nástroje.
                       {% endif %}
                     </p>
+
+                    {#
+                    <div style="margin: 0.66rem 1.5em 2rem 1.5em">
+                      <a href="https://www.leadhub.co/">
+                        <img src="/static/leadhub-schema.png" style="max-width: 100%">
+                      </a>
+                    </div>
+                    #}
+
                   </li>
                   <li>
-                    <p>
-                      <strong class="up"><a href="https://www.tabfoundry.com">Tabfoundry</a></strong> &ndash;
+                    <div class="startup-name">
+                      <strong class="up">
+                        <a href="https://www.tabfoundry.com">Tabfoundry</a>
+                      </strong>
+                    </div>
+                    <b>
                       {% if en %}
                         Facebook tab designer
                       {% elif cs %}
                         nástroj pro tvorbu Facebookových tabů
                       {% endif %}
-                    </p>
+                    </b>
 
                     <p>
                       {% if en %}
                         Create your own tab
                         on your Facebook page. It can be quiz, game, photo contest
                         or any custom content&mdash;opening hours, restaurant menu&hellip;
-                        No coding required, just WYSIWYG drag-and-drop.
+                        No coding required, just WYSIWYG drag&amp;drop.
                       {% elif cs %}
                         Pomocí Tabfoundry si můžete na své Facebookové stránce vytvořit vlastní tab.
                         Může na něm být kvíz, hra, fotosoutěž nebo libovolný vlastní obsah,
@@ -307,6 +327,29 @@
                     {% endif %}
                   </li>
                 </ul>
+
+
+                {% if en %}
+                  <p>Other:</p>
+                {% elif cs %}
+                  <p>
+                    Ostatní:
+                  </p>
+                {% endif %}
+
+                <ul>
+                  <li>
+                    <a href="https://github.com/messa/db-workshop-web-app">db-workshop-web-app</a>
+                    &ndash;
+                    {% if en %}
+                      Poll web app from DB+SQL workshop I've led
+                    {% elif cs %}
+                      web aplikace Anketa z databázového workshopu
+                    {% endif %}
+                  </li>
+                </ul>
+
+
               </section>
               <section id="blog">
                 <h2>Blog</h2>
