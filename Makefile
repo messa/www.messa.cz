@@ -6,7 +6,6 @@ live_port=10002
 temp_port=10003
 docker_deploy_args=--restart unless-stopped -e "WWW_MESSA_CZ_GA_ID=$(shell cat ~/.config/www_messa_cz_ga_id)"
 
-
 flask-run: venv
 	PYTHONPATH=. PYTHONDONTWRITEBYTECODE=1 \
 	FLASK_APP=messa_web FLASK_DEBUG=1 \
