@@ -3,6 +3,7 @@ FROM debian:jessie
 MAINTAINER Petr Messner
 
 ENV DEBIAN_FRONTEND noninteractive
+ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends python3-venv gcc
