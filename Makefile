@@ -30,10 +30,10 @@ deploy:
 	make docker-image
 	make deploy-temp
 	sleep 2
-	curl http://localhost:$(temp_port)/_ok || ( make stop-temp; exit 1 )
+	curl -f http://localhost:$(temp_port)/_ok || ( make stop-temp; false )
 	make deploy-live
 	sleep 2
-	curl http://localhost:$(live_port)/_ok
+	curl -f http://localhost:$(live_port)/_ok
 	make stop-temp
 	@echo Done
 
