@@ -25,15 +25,18 @@ docker-image:
 docker-run: docker-image
 	docker run --rm -p 8000:8000 $(docker_image_name)
 
+remote-deploy:
+	ssh www.messa.cz make -C weby/www.messa.cz deploy
+
 deploy:
 	git pull --ff-only
 	make docker-image
 	make deploy-temp
 	sleep 2
-	curl -f http://localhost:$(temp_port)/_ok || ( make stop-temp; false )
+	curl -fs http://localhost:$(temp_port)/_ok || ( make stop-temp; false )
 	make deploy-live
 	sleep 2
-	curl -f http://localhost:$(live_port)/_ok
+	curl -fs http://localhost:$(live_port)/_ok
 	make stop-temp
 	@echo Done
 
