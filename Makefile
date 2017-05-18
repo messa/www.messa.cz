@@ -1,4 +1,4 @@
-pyvenv=pyvenv-3.4
+python3=python3.5
 venv_dir=venv
 docker_image_name=www_messa_cz
 container_name_prefix=www_messa_cz
@@ -14,7 +14,7 @@ flask-run: venv
 venv: $(venv_dir)/requirements-installed
 
 $(venv_dir)/requirements-installed: requirements.txt
-	test -d $(venv_dir) || $(pyvenv) $(venv_dir)
+	test -d $(venv_dir) || $(python3) -m venv $(venv_dir)
 	$(venv_dir)/bin/pip install -U pip
 	$(venv_dir)/bin/pip install -r requirements.txt
 	touch $@

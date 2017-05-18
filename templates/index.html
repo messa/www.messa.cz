@@ -292,29 +292,38 @@
                 </ul>
 
 
-                {% if en %}
-                  <p>Personal things:</p>
-                {% elif cs %}
-                  <p>
+                <p>
+                  {% if en %}
+                    Personal things:
+                  {% elif cs %}
                     Osobní věci:
-                  </p>
-                {% endif %}
+                  {% endif %}
+                </p>
 
                 <ul>
+                  <li>
+                    <a href="https://github.com/messa/talks">talks</a>
+                    &ndash;
+                    {% if en %}
+                      Github repo with slides and source code from my talks
+                    {% elif cs %}
+                      Github repozitář se slajdy a zdrojovými kódy z&nbsp;mých přednášek
+                    {% endif %}
+                  </li>
                   <li>
                     <a href="https://github.com/messa/tips">tips</a>
                     &ndash;
                     {% if en %}
-                      Github repo with some notes
+                      some notes, tips etc. mostly for developers and devops
                     {% elif cs %}
-                      Github repozitář s různými poznámkami
+                      různé poznámky okolo programování a devops
                     {% endif %}
                   </li>
                   <li>
                     <a href="https://github.com/messa/tools">tools</a>
                     &ndash;
                     {% if en %}
-                      some CLI scripts I use
+                      command line scripts I use
                     {% elif cs %}
                       konzolové skripty
                     {% endif %}
@@ -334,12 +343,17 @@
                 {% if en %}
                   <p>Other:</p>
                 {% elif cs %}
-                  <p>
-                    Ostatní:
-                  </p>
+                  <p>Ostatní:</p>
                 {% endif %}
 
                 <ul>
+                  <li>
+                    <a href="https://github.com/messa/demo-nextjs-materialui-todo">demo-nextjs-materialui-todo</a>
+                    &ndash;
+                    {% if en   %} technology demo web app
+                    {% elif cs %} next.js demo web app
+                    {% endif %}
+                  </li>
                   <li>
                     <a href="https://github.com/messa/db-workshop-web-app">db-workshop-web-app</a>
                     &ndash;
