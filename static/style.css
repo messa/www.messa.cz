@@ -97,5 +97,5 @@ ul.big li {
 }
 span.icon-and-text {
     /* I don't want newline between logo and the text */
-    white-space: nowrap;
+    white-space: pre;
 }
