@@ -33,11 +33,11 @@ deploy:
 	make docker-image
 	make deploy-temp
 	sleep 2
-	curl -fs http://localhost:$(temp_port)/_ok || ( make stop-temp; false )
+	curl -fs http://localhost:$(temp_port)/_ok || ( make deploy-stop-temp; false )
 	make deploy-live
 	sleep 2
 	curl -fs http://localhost:$(live_port)/_ok
-	make stop-temp
+	make deploy-stop-temp
 	@echo Done
 
 deploy-live:
@@ -50,7 +50,7 @@ deploy-temp:
 	docker rm   $(container_name_prefix)_temp || true
 	docker run -d --name $(container_name_prefix)_temp -p $(temp_port):8000 $(docker_deploy_args) $(docker_image_name)
 
-stop-temp:
+deploy-stop-temp:
 	docker stop $(container_name_prefix)_temp || true
 
 run-deploy-demo-nginx:
