@@ -34,12 +34,12 @@ def index():
 def index_en():
     # Both language versions are stored in a single template, differentiated
     # only using the variables 'en' and 'cs' (True/False).
-    return render_template('index.html', en=True)
+    return render_template('index.html', en=True, tr=lambda en, cs: en)
 
 
 @app.route('/cs/')
 def index_cs():
-    return render_template('index.html', cs=True)
+    return render_template('index.html', cs=True, tr=lambda en, cs: cs)
 
 
 @app.route('/<string:filename>')

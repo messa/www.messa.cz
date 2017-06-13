@@ -38,25 +38,13 @@
           <div class="headline">
             <h1>Petr Messner</h1>
             <p class="lead">
-              {% if en %}
-                Software developer, startup cofounder
-              {% elif cs %}
-                Softwarový vývojář, startupista
-              {% endif %}
+              {{ tr("Software developer, startup cofounder", "Softwarový vývojář, startupista") }}
             </p>
           </div>
         </div>
         <div class="row">
             <div class="col-md-6 bigcol-left">
               <section id="the-startups">
-                {#
-                {% if en %}
-                  <p>The startups are:</p>
-                {% elif cs %}
-                  <p>Startupy:</p>
-                {% endif %}
-                #}
-
                 <ul class="big">
                   <li>
                     <div class="startup-name">
@@ -152,11 +140,7 @@
                   {% endif %}
 
                   <p>
-                    {% if en %}
-                      <b>Stuff I work with:</b>
-                    {% elif cs %}
-                      <b>S čím pracuji:</b>
-                    {% endif %}
+                    <b>{{ tr("Stuff I work with:", "S čím pracuji:") }}</b>
                     <span class="icon-and-text"><img src="/static/icons/python.png" alt="" style="height: 1rem;">&nbsp;Python</span> &middot;
                     <span class="icon-and-text"><img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="" style="height: .9rem; margin-top: -3px">&nbsp;C++</span> &middot;
                     <span class="icon-and-text"><img src="/static/icons/mongodb.png" alt="" style="height: 1rem;">&nbsp;MongoDB</span> &middot;
@@ -179,34 +163,27 @@
                     </p>
                   {% endif %}
 
-                  {% if en %}
-                    <p>
-                      <b>Twitter:</b>
+                  <p>
+                    <b>Twitter:</b>
+                    {% if en %}
                       <strong><a href='https://twitter.com/messa_en'>
                         <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
                         messa_en</a></strong> &ndash; English &middot;
                       <strong><a href='https://twitter.com/messa_cz'>
                         <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
                         messa_cz</a></strong> &ndash; Czech
-                    </p>
-                  {% elif cs %}
-                  <p>
-                    <b>Twitter:</b>
-                    <strong><a href='https://twitter.com/messa_cz'>
-                      <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
-                      messa_cz</a></strong> &ndash; česky &middot;
-                    <strong><a href='https://twitter.com/messa_en'>
-                      <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
-                      messa_en</a></strong> &ndash; anglicky
+                    {% elif cs %}
+                      <strong><a href='https://twitter.com/messa_cz'>
+                        <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
+                        messa_cz</a></strong> &ndash; česky &middot;
+                      <strong><a href='https://twitter.com/messa_en'>
+                        <img src="/static/icons/twitter.png" alt="" style="height: 1rem;">
+                        messa_en</a></strong> &ndash; anglicky
+                    {% endif %}
                   </p>
-                  {% endif %}
 
                   <p>
-                    {% if en %}
-                      <b>Code:</b>
-                    {% elif cs %}
-                      <b>Kód:</b>
-                    {% endif %}
+                    <b>{{ tr("Code:", "Kód:") }}</b>
                     <a href="https://github.com/messa">
                       <img src="/static/icons/github-octocat.jpg" alt="" style="height: 1rem;">
                       Github</a> &middot;
@@ -222,13 +199,7 @@
                     <b>E-mail:</b>
                     <a href="mailto:petr.messner@gmail.com">petr.messner@gmail.com</a>
                     &middot;
-                    <a href="/static/gpg-key.asc">
-                      {% if en %}
-                        GPG&nbsp;key
-                      {% elif cs %}
-                        GPG&nbsp;klíč
-                      {% endif %}
-                    </a>
+                    <a href="/static/gpg-key.asc">{{ tr("GPG&nbsp;key"|safe, "GPG&nbsp;klíč"|safe) }}</a>
                   </p>
 
                   <p>
@@ -263,106 +234,52 @@
             </div>
             <div class="col-md-6 bigcol-right">
               <section id="projects">
-                <h2>
-                  {% if en %}
-                    Projects
-                  {% elif cs %}
-                    Projekty
-                  {% endif %}
-                </h2>
 
-                {% if en %}
-                  <p>Open-source projects:</p>
-                {% elif cs %}
-                  <p>Open-source projekty:</p>
-                {% endif %}
+                <h2>{{ tr("Projects", "Projekty") }}</h2>
+
+                <p>{{ tr("Open-source projects:", "Open-source projekty:") }}</p>
 
                 <ul>
                   <li>
-                    <a href="https://github.com/messa/pyfw">pyfw</a>
-                    &ndash;
-                    {% if en %}
-                      Python iptables firewall
-                    {% elif cs %}
-                      Python iptables firewall
-                    {% endif %}
+                    <a href="https://github.com/messa/pyfw">pyfw</a> &ndash;
+                    {{ tr("Python iptables firewall", "Python iptables firewall") }}
                   </li>
                 </ul>
 
 
-                <p>
-                  {% if en %}
-                    Personal things:
-                  {% elif cs %}
-                    Osobní věci:
-                  {% endif %}
-                </p>
+                <p>{{ tr("Personal things:", "Osobní věci:") }}</p>
 
                 <ul>
                   <li>
-                    <a href="https://github.com/messa/talks">talks</a>
-                    &ndash;
-                    {% if en %}
-                      Github repo with slides and source code from my talks
-                    {% elif cs %}
-                      Github repozitář se slajdy a zdrojovými kódy z&nbsp;mých přednášek
-                    {% endif %}
+                    <a href="https://github.com/messa/talks">talks</a> &ndash;
+                    {{ tr("Github repo with slides and source code from my talks", "Github repozitář se slajdy a zdrojovými kódy z&nbsp;mých přednášek"|safe) }}
                   </li>
                   <li>
-                    <a href="https://github.com/messa/tips">tips</a>
-                    &ndash;
-                    {% if en %}
-                      some notes, tips etc. mostly for developers and devops
-                    {% elif cs %}
-                      různé poznámky okolo programování a&nbsp;devops
-                    {% endif %}
+                    <a href="https://github.com/messa/tips">tips</a> &ndash;
+                    {{ tr("some notes, tips etc. mostly for developers and devops", "různé poznámky okolo programování a&nbsp;devops"|safe) }}
                   </li>
                   <li>
-                    <a href="https://github.com/messa/tools">tools</a>
-                    &ndash;
-                    {% if en %}
-                      command line scripts I&nbsp;use
-                    {% elif cs %}
-                      konzolové skripty
-                    {% endif %}
+                    <a href="https://github.com/messa/tools">tools</a> &ndash;
+                    {{ tr("command line scripts I&nbsp;use"|safe, "konzolové skripty") }}
                   </li>
                   <li>
-                    <a href="https://github.com/messa/dotfiles">dotfiles</a>
-                    &ndash;
-                    {% if en %}
-                      configuration files
-                    {% elif cs %}
-                      konfigurační soubory
-                    {% endif %}
+                    <a href="https://github.com/messa/dotfiles">dotfiles</a> &ndash;
+                    {{ tr("configuration files", "konfigurační soubory") }}
                   </li>
                 </ul>
 
-
-                {% if en %}
-                  <p>Other:</p>
-                {% elif cs %}
-                  <p>Ostatní:</p>
-                {% endif %}
+                <p>{{ tr("Other:", "Ostatní:") }}</p>
 
                 <ul>
                   <li>
-                    <a href="https://github.com/messa/demo-nextjs-materialui-todo">demo-nextjs-materialui-todo</a>
-                    &ndash;
-                    {% if en   %} technology demo web app
-                    {% elif cs %} next.js demo web app
-                    {% endif %}
+                    <a href="https://github.com/messa/demo-nextjs-materialui-todo">demo-nextjs-materialui-todo</a> &ndash;
+                    {{ tr("technology demo web app", "next.js demo web app") }}
                   </li>
                   <li>
-                    <a href="https://github.com/messa/db-workshop-web-app">db-workshop-web-app</a>
-                    &ndash;
-                    {% if en %}
-                      Poll web app from DB+SQL workshop I've led
-                    {% elif cs %}
-                      web aplikace Anketa z&nbsp;databázového workshopu
-                    {% endif %}
+                    <a href="https://github.com/messa/db-workshop-web-app">db-workshop-web-app</a> &ndash;
+                    {{ tr("Poll web app from DB+SQL workshop I've led", "web aplikace Anketa z&nbsp;databázového workshopu"|safe) }}
                   </li>
                 </ul>
-
 
               </section>
               <section id="blog">
