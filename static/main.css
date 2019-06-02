@@ -1,0 +1,42 @@
+body {
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 300;
+}
+
+.Layout {
+  margin: 0 auto;
+  padding: 16px 11px;
+  max-width: 1000px;
+}
+
+a {
+  color: #06c;
+}
+
+b {
+  font-weight: 500;
+}
+
+.LanguageSwitch {
+  float: right;
+}
+
+.LanguageSwitch .active {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.siteTitle {
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #c20;
+  margin-bottom: 10px;
+}
+
+.siteSubtitle {
+  font-size: 21px;
+  font-weight: 300;
+  color: #c20;
+  font-size: 110%;
+}

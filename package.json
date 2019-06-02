@@ -1,0 +1,27 @@
+{
+  "name": "messa.cz",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/messa/www.messa.cz.git"
+  },
+  "author": "Petr Messner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/messa/www.messa.cz/issues"
+  },
+  "homepage": "https://github.com/messa/www.messa.cz#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
