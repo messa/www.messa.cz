@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "now-build": "next build && next export -o dist",
     "start": "NODE_ENV=production next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

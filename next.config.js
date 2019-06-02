@@ -3,8 +3,8 @@ module.exports = {
   exportPathMap: async function(defaultPathMap) {
     return {
       '/': { page: '/' },
-      '/cs/': { page: '/home', query: { language: 'cs' } },
-      '/en/': { page: '/home', query: { language: 'en' } },
+      '/cs/': { page: '/', query: { language: 'cs' } },
+      '/en/': { page: '/', query: { language: 'en' } },
     }
   }
 }

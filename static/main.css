@@ -6,7 +6,7 @@ body {
 .Layout {
   margin: 0 auto;
   padding: 16px 11px;
-  max-width: 1000px;
+  max-width: 1180px;
 }
 
 a {
@@ -27,7 +27,7 @@ b {
 }
 
 .siteTitle {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
   color: #c20;

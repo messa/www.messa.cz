@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "messa-cz",
+  "alias": "messa-cz.now.sh",
+  "regions": ["bru1"],
+  "builds": [
+    { "src": "language-redirect.js", "use": "@now/node" },
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "language-redirect.js" }
+  ]
+}
