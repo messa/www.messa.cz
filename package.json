@@ -1,0 +1,22 @@
+{
+  "name": "messa-cz-website",
+  "version": "2.0.0",
+  "description": "My personal website and blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/messa/www.messa.cz.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Petr Messner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/messa/www.messa.cz/issues"
+  },
+  "homepage": "https://github.com/messa/www.messa.cz#readme"
+}
