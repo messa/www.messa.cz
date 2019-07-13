@@ -14,5 +14,10 @@
   "bugs": {
     "url": "https://github.com/messa/www.messa.cz/issues"
   },
-  "homepage": "https://github.com/messa/www.messa.cz#readme"
+  "homepage": "https://github.com/messa/www.messa.cz#readme",
+  "dependencies": {
+    "gatsby": "^2.13.19",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
