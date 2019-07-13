@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "messa.cz - personal website & blog",
   "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
