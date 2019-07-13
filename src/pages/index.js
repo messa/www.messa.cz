@@ -10,7 +10,7 @@ function HomePage({ data }) {
       <ul>
         {posts.map(post => (
           <li key={post.id}>
-            <h2>{post.frontmatter.title}</h2>
+            <h2><Link to={`/${post.frontmatter.slug}`}>{post.frontmatter.title}</Link></h2>
             <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
           </li>
         ))}
@@ -28,6 +28,7 @@ export const query = graphql`
           excerpt(format: HTML)
           frontmatter {
             title
+            slug
           }
         }
       }
