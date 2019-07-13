@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 function HomePage({ data }) {
   const { siteMetadata } = data.site
@@ -7,6 +7,7 @@ function HomePage({ data }) {
   return (
     <div>
       <h1>{siteMetadata.title}</h1>
+      <p><Link to='/about'>About</Link></p>
       Posts:
       <ul>
         {posts.map(post => (
