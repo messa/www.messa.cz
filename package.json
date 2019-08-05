@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/messa/www.messa.cz#readme",
   "dependencies": {
-    "gatsby": "^2.13.19",
-    "gatsby-source-filesystem": "^2.1.5",
-    "gatsby-transformer-remark": "^2.6.4",
+    "gatsby": "^2.13.51",
+    "gatsby-source-filesystem": "^2.1.8",
+    "gatsby-transformer-remark": "^2.6.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
