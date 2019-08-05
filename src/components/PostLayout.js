@@ -8,7 +8,7 @@ const staticQuery = graphql`
   query PostLayoutQuery {
     site {
       siteMetadata {
-        title
+        title2
       }
     }
   }
@@ -21,7 +21,7 @@ function PostLayout({ children }) {
     <div className='PostLayout'>
       <nav>
         <div className='siteTitle'>
-          <Link to='/'>{siteMetadata.title}</Link>
+          <Link to='/'>{siteMetadata.title2}</Link>
         </div>
         <ul>
           <li>

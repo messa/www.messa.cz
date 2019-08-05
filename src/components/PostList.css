@@ -2,5 +2,17 @@ ul.PostList {
   display: block;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
+}
+
+.PostList h2 {
+  line-height: 40px;
+  min-height: 40px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 23px;
+}
+
+.PostList h2 a {
+  color: black;
 }

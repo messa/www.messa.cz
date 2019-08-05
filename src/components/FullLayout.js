@@ -14,7 +14,19 @@ const staticQuery = graphql`
   }
 `
 
-function FullLayout({ children }) {
+function NavItem({ activeMenuItem, title, name, linkTo,  }) {
+  if (activeMenuItem === name) {
+    return (
+      <li className='active'><Link to={linkTo}>{title}</Link></li>
+    )
+  } else {
+    return (
+      <li><Link to={linkTo}>{title}</Link></li>
+    )
+  }
+}
+
+function FullLayout({ children, activeMenuItem }) {
   const data = useStaticQuery(staticQuery)
   const { siteMetadata } = data.site
   return (
@@ -28,18 +40,10 @@ function FullLayout({ children }) {
         </div>
         <nav>
           <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/projects'>Projects</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact</Link>
-            </li>
+            <NavItem activeMenuItem={activeMenuItem} title='Home' name='index' linkTo='/' />
+            <NavItem activeMenuItem={activeMenuItem} title='About' name='about' linkTo='/about' />
+            <NavItem activeMenuItem={activeMenuItem} title='Projects' name='projects' linkTo='/projects' />
+            <NavItem activeMenuItem={activeMenuItem} title='Contact' name='contact' linkTo='/contact' />
           </ul>
         </nav>
       </div>

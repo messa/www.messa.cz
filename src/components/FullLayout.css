@@ -9,10 +9,12 @@
 }
 
 .FullLayout h1.siteTitle {
-font-family: Bitter, sans-serif;
-font-size: 21px;
-margin: 10px 0;
-text-transform: uppercase;
+  font-family: Bitter, sans-serif;
+  font-size: 21px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  line-height: 40px;
+  min-height: 40px;
 }
 
 .FullLayout h1.siteTitle,
@@ -46,4 +48,14 @@ text-transform: uppercase;
   color: #666;
   display: block;
   padding: 3px 0 3px 0px;
+}
+
+.FullLayout nav li.active a {
+  color: black;
+}
+
+.FullLayout .mainContent h1 {
+  margin: 10px 0 20px 0;
+  line-height: 40px;
+  min-height: 40px;
 }

@@ -6,7 +6,7 @@ import PostList from '../components/PostList'
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(edge => edge.node)
   return (
-    <FullLayout>
+    <FullLayout activeMenuItem='index'>
       <PostList posts={posts} />
     </FullLayout>
   )
