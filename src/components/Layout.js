@@ -16,7 +16,7 @@ function Layout({ children }) {
   const { siteMetadata } = data.site
   return (
     <div>
-      <h1>{siteMetadata.title}</h1>
+      <h1 className='siteTitle'>{siteMetadata.title}</h1>
       <nav>
         <ul>
           <li>
