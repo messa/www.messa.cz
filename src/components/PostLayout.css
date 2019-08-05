@@ -1,0 +1,16 @@
+.PostLayout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.PostLayout nav {
+  display: flex;
+}
+
+.PostLayout nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

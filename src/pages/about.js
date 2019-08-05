@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import FullLayout from '../components/FullLayout'
 
 function AboutPage() {
   return (
-    <Layout>
+    <FullLayout>
       <h1>About</h1>
-    </Layout>
+    </FullLayout>
   )
 }
 

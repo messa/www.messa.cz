@@ -1,14 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import FullLayout from '../components/FullLayout'
 import PostList from '../components/PostList'
 
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(edge => edge.node)
   return (
-    <Layout>
+    <FullLayout>
       <PostList posts={posts} />
-    </Layout>
+    </FullLayout>
   )
 }
 

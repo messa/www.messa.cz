@@ -1,0 +1,49 @@
+.FullLayout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+  padding: 24px 30px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.FullLayout h1.siteTitle {
+font-family: Bitter, sans-serif;
+font-size: 21px;
+margin: 10px 0;
+text-transform: uppercase;
+}
+
+.FullLayout h1.siteTitle,
+.FullLayout h1.siteTitle a {
+  color: #c20;
+  text-decoration: none;
+}
+
+.FullLayout .subtitle {
+  font-size: 17px;
+  color: #c20;
+  margin: 10px 0 20px 0;
+}
+
+.FullLayout nav > ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.FullLayout nav li {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.FullLayout nav li a {
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #666;
+  display: block;
+  padding: 3px 0 3px 0px;
+}

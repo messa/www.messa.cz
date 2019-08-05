@@ -4,7 +4,7 @@ import FullLayout from '../components/FullLayout'
 function AboutPage() {
   return (
     <FullLayout>
-      <h1>Contact</h1>
+      <h1>Projects</h1>
     </FullLayout>
   )
 }

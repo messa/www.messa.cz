@@ -1,14 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import PostLayout from '../components/PostLayout'
 
 function Post({ pageContext, data }) {
   const { post } = data
   return (
-    <Layout>
+    <PostLayout>
       <h1 className='postTitle'>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </Layout>
+    </PostLayout>
   )
 }
 

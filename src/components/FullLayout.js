@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import './Layout.css'
+import './basic.css'
+import './FullLayout.css'
 
 const staticQuery = graphql`
-  query LayoutQuery {
+  query FullLayoutQuery {
     site {
       siteMetadata {
         title
@@ -13,11 +14,11 @@ const staticQuery = graphql`
   }
 `
 
-function Layout({ children }) {
+function FullLayout({ children }) {
   const data = useStaticQuery(staticQuery)
   const { siteMetadata } = data.site
   return (
-    <div className='Layout'>
+    <div className='FullLayout'>
       <div className='navigation'>
         <h1 className='siteTitle'>
           <Link to='/'>{siteMetadata.title}</Link>
@@ -34,6 +35,9 @@ function Layout({ children }) {
               <Link to='/about'>About</Link>
             </li>
             <li>
+              <Link to='/projects'>Projects</Link>
+            </li>
+            <li>
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>
@@ -46,4 +50,4 @@ function Layout({ children }) {
   )
 }
 
-export default Layout
+export default FullLayout
