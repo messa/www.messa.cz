@@ -19,14 +19,22 @@ function Layout({ children }) {
   return (
     <div className='Layout'>
       <div className='navigation'>
-        <h1 className='siteTitle'>{siteMetadata.title}</h1>
+        <h1 className='siteTitle'>
+          <Link to='/'>{siteMetadata.title}</Link>
+        </h1>
+        <div className='subtitle'>
+          Software developer,<br />startup cofounder
+        </div>
         <nav>
           <ul>
             <li>
-              <Link to='/'>home</Link>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/about'>about</Link>
+              <Link to='/about'>About</Link>
+            </li>
+            <li>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </nav>

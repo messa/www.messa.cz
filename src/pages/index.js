@@ -6,7 +6,6 @@ function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(edge => edge.node)
   return (
     <Layout>
-      Posts:
       <ul>
         {posts.map(post => (
           <li key={post.id}>
