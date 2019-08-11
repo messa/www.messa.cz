@@ -7,7 +7,7 @@ import PostList from '../components/posts/PostList'
 function HomePage({ pageContext, data }) {
   const { language } = pageContext
   const posts = data.allMarkdownRemark.edges.map(edge => edge.node)
-    .filter(p => p.fields.language == language)
+    .filter(p => p.fields.language === language)
   return (
     <LanguageContext.Provider value={language}>
       <TopLevelPageLayout

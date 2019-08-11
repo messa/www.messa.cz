@@ -20,7 +20,7 @@ function SiteTitle({ asH1, language }) {
   if (asH1) {
     return (
       <h1 className='siteTitle'>
-        {siteMetadata.title}
+        <Link to={`/${language}/`}>{siteMetadata.title}</Link>
       </h1>
     )
   } else {
