@@ -1,0 +1,16 @@
+.TopLevelPageLayout {
+  padding: 24px 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.TopLevelPageLayout .LanguageSwitcher {
+  float: right;
+}
+
+.TopLevelPageLayout > .content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-gap: 20px;
+}
+

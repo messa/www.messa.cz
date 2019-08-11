@@ -1,0 +1,19 @@
+.LanguageChooser {
+  max-width: 20em;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 32px;
+}
+
+.LanguageChooser ul {
+  list-style-type: none;
+}
+
+.LanguageChooser ul li {
+  margin: 20px 0;
+}
+
+.LanguageChooser a {
+  text-decoration: none;
+  color: #333;
+}

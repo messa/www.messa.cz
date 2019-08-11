@@ -1,32 +1,17 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import FullLayout from '../components/FullLayout'
-import PostList from '../components/PostList'
+import { Link } from 'gatsby'
 
-function HomePage({ data }) {
-  const posts = data.allMarkdownRemark.edges.map(edge => edge.node)
+import '../css/language-choose-page.css'
+
+function IndexPage() {
   return (
-    <FullLayout activeMenuItem='index'>
-      <PostList posts={posts} />
-    </FullLayout>
+    <div className='LanguageChooser'>
+      <ul>
+        <li><Link to='/en/'>English</Link></li>
+        <li><Link to='/cs/'>Česky</Link></li>
+      </ul>
+    </div>
   )
 }
 
-export const query = graphql`
-  query HomePageQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          excerpt(format: HTML)
-          frontmatter {
-            title
-            slug
-          }
-        }
-      }
-    }
-  }
-`
-
-export default HomePage
+export default IndexPage

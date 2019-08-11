@@ -1,0 +1,15 @@
+.siteTitle {
+  font-family: Bitter, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-transform: uppercase;
+  line-height: 40px;
+  min-height: 40px;
+}
+
+.siteTitle,
+.siteTitle a {
+  color: #c20;
+  text-decoration: none;
+}

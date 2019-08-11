@@ -1,9 +1,10 @@
 ---
-title: First post
+title: První!!
 slug: first
+language: cs
 ---
 
-*Hello,* this is the first post!
+*Ahoj,* toto je první článek!
 
 Aute id est occaecat ea ut duis veniam aliqua consequat proident. Nulla id ex consectetur do. Consectetur occaecat cupidatat cupidatat sit qui mollit officia nisi. Fugiat eu consectetur minim fugiat laboris dolor. Duis ipsum ex commodo culpa Lorem enim occaecat aute adipisicing et. Aute ullamco excepteur minim laborum adipisicing velit fugiat ut pariatur consequat sunt. Anim laborum elit voluptate fugiat ad consequat cillum et magna veniam id ut elit.
 
