@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "name": "messa-cz",
+  "alias": "messa-cz-20190704.now.sh",
+  "regions": ["bru"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }, {
+      "src": "redirect.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/redirect.js"
+    }, {
+      "src": "/static/(.*)",
+      "dest": "/static/$1",
+      "headers": { "cache-control": "public,max-age=864000,immutable" }
+    }, {
+      "src": "/(.*\\.(js|json|css|ico|png)$)",
+      "dest": "/$1",
+      "headers": { "cache-control": "public,max-age=864000,immutable" }
+    }, {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": { "cache-control": "public,max-age=60,must-revalidate" }
+    }
+  ]
+}
