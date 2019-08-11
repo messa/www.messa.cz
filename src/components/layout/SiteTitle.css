@@ -2,8 +2,11 @@
   font-family: Bitter, sans-serif;
   font-size: 21px;
   font-weight: 600;
-  margin: 10px 0;
   text-transform: uppercase;
+}
+
+aside .siteTitle {
+  margin: 10px 0;
   line-height: 40px;
   min-height: 40px;
 }

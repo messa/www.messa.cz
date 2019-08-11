@@ -1,0 +1,17 @@
+.LanguageSwitcher {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.LanguageSwitcher a {
+  text-decoration: none;
+  color: #c20;
+}
+
+.LanguageSwitcher a:hover {
+  text-decoration: underline;
+}
+
+.LanguageSwitcher b {
+  font-weight: 500;
+}
