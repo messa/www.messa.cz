@@ -11,12 +11,13 @@ ul.NavigationMenu li {
 }
 
 ul.NavigationMenu li a {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
   color: #666;
   display: block;
-  padding: 3px 0 3px 0px;
+  padding: 4px 0;
 }
 
 ul.NavigationMenu li a:hover {
@@ -25,4 +26,5 @@ ul.NavigationMenu li a:hover {
 
 ul.NavigationMenu li.active a {
   color: black;
+  font-weight: 500;
 }

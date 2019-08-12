@@ -8,6 +8,7 @@
 .PostPageLayout > header .siteTitle,
 .PostPageLayout > header ul.NavigationMenu li a {
   font-size: 13px;
+  font-weight: 300;
 }
 
 .PostPageLayout > header,
@@ -40,11 +41,20 @@
   margin-left: 20px;
 }
 
+
+.PostPageLayout > main article > * {
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .PostPageLayout > main article h1 {
   font-size: 40px;
+  text-align: center;
+  max-width: 760px;
 }
 
 .PostPageLayout > main article p {
   font-size: 17px;
-  line-height: 24px;
+  line-height: 26px;
 }
