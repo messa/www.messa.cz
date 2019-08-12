@@ -13,3 +13,8 @@
   grid-template-columns: 280px 1fr;
   grid-gap: 20px;
 }
+
+.TopLevelPageLayout > .content > aside nav {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}

@@ -2,6 +2,7 @@
 title: První!!
 slug: first
 language: cs
+date: '2019-07-21'
 ---
 
 *Ahoj,* toto je první článek!

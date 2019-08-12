@@ -3,6 +3,7 @@ import LanguageSwitcher from './LanguageSwitcher'
 import SiteTitle from './SiteTitle'
 import SiteSubtitle from './SiteSubtitle'
 import NavigationMenu from './NavigationMenu'
+import RSSIcon from './RSSIcon'
 
 import './TopLevelPageLayout.css'
 
@@ -17,6 +18,7 @@ function TopLevelPageLayout({ children, siteTitleAsH1, enLink, csLink, activeMen
           <nav>
             <NavigationMenu activeMenuItem={activeMenuItem} />
           </nav>
+          <RSSIcon />
         </aside>
         <main>
           {children}

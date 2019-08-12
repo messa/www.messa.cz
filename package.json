@@ -20,6 +20,7 @@
   "homepage": "https://github.com/messa/www.messa.cz#readme",
   "dependencies": {
     "gatsby": "^2.13.57",
+    "gatsby-plugin-feed": "^2.3.6",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-remark": "^2.6.12",

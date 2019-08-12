@@ -2,6 +2,7 @@
 title: First post
 slug: first
 language: en
+date: '2019-07-21'
 ---
 
 *Hello,* this is the first post!
